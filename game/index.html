@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gobble Run — a turkey escape game. Outrun the farmer, dodge ovens and carving knives, reach the forest gate at 1000 m.">
+<title>Gobble Run — Thanksgiving Escape</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #1a0f2e;
+    min-height: 100vh;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #fff3d6;
+  }
+  canvas {
+    display: block;
+    width: min(960px, 100vw);
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #2e1c4e;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  p {
+    margin: 12px 0 0;
+    font-size: 14px;
+    opacity: 0.8;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="540"></canvas>
+<noscript><p>Gobble Run needs JavaScript to play.</p></noscript>
+<p>Space / Up to jump &middot; Down to duck &middot; P to pause &middot; M to mute &middot; Click the buttons to start and restart</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
